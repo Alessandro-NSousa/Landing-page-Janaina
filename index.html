@@ -18,10 +18,10 @@
 
     <!-- Navigation Header -->
     <header class="fixed top-0 w-full bg-white shadow-md z-50">
-        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <nav class="max-w-7xl mx-auto px-4 md:px-6 py-2 md:py-4 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <div class="text-2xl font-bold gradient-text">JS</div>
-                <span class="font-bold text-gray-900 hidden sm:inline">Janaina Santana</span>
+                <div class="text-xl md:text-2xl font-bold gradient-text">JS</div>
+                <span class="font-bold text-gray-900 hidden sm:inline text-sm md:text-base">Janaina Santana</span>
             </div>
             <div class="hidden md:flex items-center gap-8">
                 <a href="#sobre" class="text-gray-600 hover:text-primary-700 transition">Sobre</a>
@@ -31,56 +31,79 @@
                 <a href="#planos" class="text-gray-600 hover:text-primary-700 transition">Planos</a>
                 <a href="#faq" class="text-gray-600 hover:text-primary-700 transition">FAQ</a>
             </div>
-            <a href="https://wa.me/5511999999999?text=Olá%20Janaina,%20gostaria%20de%20conhecer%20seus%20serviços" target="_blank" class="btn-whatsapp">
+            
+            <!-- Desktop WhatsApp Button -->
+            <a href="https://wa.me/5511999999999?text=Olá%20Janaina,%20gostaria%20de%20conhecer%20seus%20serviços" target="_blank" class="hidden md:flex btn-whatsapp text-sm py-2.5 px-4">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.743 5.4 2.155 7.696L2.5 22.5l8.232-2.158a9.84 9.84 0 004.617 1.175h.005c5.43 0 9.855-4.428 9.855-9.867 0-2.634-.71-5.108-2.055-7.25a9.823 9.823 0 00-7.749-3.497M12 20.447c-1.442 0-2.854-.376-4.077-1.089l-.292-.162-3.03.794.805-2.935-.19-.303a8.203 8.203 0 11.53-13.947l.309.188 3.156-.827-.836 3.021.154.324a8.187 8.187 0 012.28 5.769z"/></svg>
                 WhatsApp
             </a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-primary-700 transition p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-4">
+                <a href="#sobre" class="text-gray-600 hover:text-primary-700 transition py-2 mobile-menu-link">Sobre</a>
+                <a href="#servicos" class="text-gray-600 hover:text-primary-700 transition py-2 mobile-menu-link">Serviços</a>
+                <a href="#beneficios" class="text-gray-600 hover:text-primary-700 transition py-2 mobile-menu-link">Benefícios</a>
+                <a href="#depoimentos" class="text-gray-600 hover:text-primary-700 transition py-2 mobile-menu-link">Depoimentos</a>
+                <a href="#planos" class="text-gray-600 hover:text-primary-700 transition py-2 mobile-menu-link">Planos</a>
+                <a href="#faq" class="text-gray-600 hover:text-primary-700 transition py-2 mobile-menu-link">FAQ</a>
+                <a href="https://wa.me/5511999999999?text=Olá%20Janaina,%20gostaria%20de%20conhecer%20seus%20serviços" target="_blank" class="btn-whatsapp justify-center text-sm py-2.5 px-4 mt-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.743 5.4 2.155 7.696L2.5 22.5l8.232-2.158a9.84 9.84 0 004.617 1.175h.005c5.43 0 9.855-4.428 9.855-9.867 0-2.634-.71-5.108-2.055-7.25a9.823 9.823 0 00-7.749-3.497M12 20.447c-1.442 0-2.854-.376-4.077-1.089l-.292-.162-3.03.794.805-2.935-.19-.303a8.203 8.203 0 11.53-13.947l.309.188 3.156-.827-.836 3.021.154.324a8.187 8.187 0 012.28 5.769z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-6 bg-gradient-to-br from-primary-50 via-white to-accent-50">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section class="min-h-screen flex items-center px-4 md:px-6 bg-gradient-to-br from-primary-50 via-white to-accent-50 pt-16 pb-8 md:pt-0 md:pb-0">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
             <!-- Hero Content -->
-            <div class="space-y-6 animate-fade-in">
-                <div class="inline-block px-4 py-2 bg-primary-100 rounded-full">
-                    <span class="text-primary-700 font-semibold text-sm">Transforme sua vida com profissionalismo</span>
+            <div class="space-y-4 md:space-y-6 animate-fade-in order-2 md:order-1">
+                <div class="inline-block px-3 md:px-4 py-1 md:py-2 bg-primary-100 rounded-full">
+                    <span class="text-primary-700 font-semibold text-xs md:text-sm">Transforme sua vida com profissionalismo</span>
                 </div>
-                <h1 class="leading-tight">
+                <h1 class="leading-tight text-3xl md:text-5xl lg:text-6xl font-bold">
                     Treinos Personalizados com 
                     <span class="gradient-text">Acompanhamento Profissional</span>
                 </h1>
-                <p class="text-lg text-gray-600 leading-relaxed">
+                <p class="text-sm md:text-lg text-gray-600 leading-relaxed">
                     Onde você estiver, quando você quiser. Consultoria fitness online, treinos personalizados e pilates com educadora física especializada.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <button onclick="document.getElementById('formulario-secao').scrollIntoView({behavior: 'smooth'})" class="btn-primary">
+                <div class="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-4">
+                    <button onclick="document.getElementById('formulario-secao').scrollIntoView({behavior: 'smooth'})" class="btn-primary text-sm md:text-base">
                         Quero Começar Agora
                     </button>
-                    <a href="https://wa.me/5511999999999?text=Olá%20Janaina,%20gostaria%20de%20conhecer%20seus%20serviços" target="_blank" class="btn-whatsapp justify-center">
+                    <a href="https://wa.me/5511999999999?text=Olá%20Janaina,%20gostaria%20de%20conhecer%20seus%20serviços" target="_blank" class="btn-whatsapp justify-center text-sm md:text-base">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.743 5.4 2.155 7.696L2.5 22.5l8.232-2.158a9.84 9.84 0 004.617 1.175h.005c5.43 0 9.855-4.428 9.855-9.867 0-2.634-.71-5.108-2.055-7.25a9.823 9.823 0 00-7.749-3.497M12 20.447c-1.442 0-2.854-.376-4.077-1.089l-.292-.162-3.03.794.805-2.935-.19-.303a8.203 8.203 0 11.53-13.947l.309.188 3.156-.827-.836 3.021.154.324a8.187 8.187 0 012.28 5.769z"/></svg>
                         Falar com Janaina
                     </a>
                 </div>
-                <div class="flex gap-8 pt-8 text-sm">
+                <div class="flex gap-6 md:gap-8 pt-3 md:pt-6 text-sm md:text-base">
                     <div>
-                        <p class="text-2xl font-bold gradient-text">500+</p>
-                        <p class="text-gray-600">Alunos Atendidos</p>
+                        <p class="text-2xl md:text-4xl font-bold gradient-text">500+</p>
+                        <p class="text-gray-600 text-xs md:text-base">Alunos Atendidos</p>
                     </div>
                     <div>
-                        <p class="text-2xl font-bold gradient-text">8+</p>
-                        <p class="text-gray-600">Anos de Experiência</p>
+                        <p class="text-2xl md:text-4xl font-bold gradient-text">8+</p>
+                        <p class="text-gray-600 text-xs md:text-base">Anos de Experiência</p>
                     </div>
                 </div>
             </div>
 
             <!-- Hero Image -->
-            <div class="relative hidden md:block h-full min-h-96">
-                <div class="absolute inset-0 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl blur-3xl opacity-20"></div>
-                <div class="relative rounded-2xl h-full overflow-hidden shadow-2xl">
-                    <div class="absolute inset-0 bg-gradient-to-br from-primary-100 via-white to-accent-50"></div>
-                    <img src="./assets/images/janaina-hero.png" alt="Janaina Santana - Personal Trainer" class="w-full h-full object-cover object-top relative z-10 brightness-105 contrast-95 saturate-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary-50 via-transparent to-transparent opacity-50"></div>
+            <div class="relative order-1 md:order-2 h-64 md:h-full md:min-h-96">
+                <div class="relative rounded-2xl md:rounded-3xl h-full overflow-hidden">
+                    <img src="./assets/images/janaina-hero.png" alt="Janaina Santana - Personal Trainer" loading="lazy" class="w-full h-full object-cover object-top">
+                    <div class="absolute inset-0" style="background: radial-gradient(circle at center, rgba(124, 58, 237, 0.05) 0%, transparent 70%);"></div>
                 </div>
             </div>
         </div>
@@ -90,11 +113,8 @@
     <section id="sobre" class="section-container bg-white">
         <div class="section-content grid md:grid-cols-2 gap-12 items-center">
             <div class="relative hidden md:block h-full min-h-96">
-                <div class="absolute -inset-4 bg-gradient-to-r from-primary-200 to-secondary-200 rounded-2xl blur-2xl opacity-30"></div>
-                <div class="relative rounded-xl h-96 overflow-hidden shadow-xl">
-                    <div class="absolute inset-0 bg-gradient-to-br from-primary-100 via-white to-accent-50"></div>
-                    <img src="./assets/images/janaina-sobre.jpg" alt="Janaina Santana - Educadora Física" class="w-full h-full object-cover object-center relative z-10 brightness-105 contrast-95 saturate-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-primary-50 via-transparent to-transparent opacity-50"></div>
+                <div class="relative rounded-2xl h-full overflow-hidden">
+                    <img src="./assets/images/janaina-sobre.png" alt="Janaina Santana - Educadora Física" class="w-full h-full object-contain object-center">
                 </div>
             </div>
             <div class="space-y-6">
@@ -744,6 +764,22 @@
             const elements = document.querySelectorAll('.animate-fade-in, .card');
             elements.forEach((el, index) => {
                 el.style.animation = `fadeIn 0.6s ease-in ${index * 0.1}s both`;
+            });
+        });
+
+        // Menu Mobile
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fechar menu ao clicar em um link
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
             });
         });
     </script>
