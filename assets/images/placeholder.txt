@@ -1,0 +1,83 @@
+INSTRUÇÕES PARA ADICIONAR IMAGENS
+=================================
+
+Para integrar as fotos da Janaina nesta pasta, siga os passos:
+
+1. IMAGENS NECESSÁRIAS:
+
+   a) janaina-hero.jpg
+      - Tamanho: 600x800px (mínimo)
+      - Descrição: Foto de corpo inteiro para seção Hero
+      - Recomendação: Use a primeira foto anexada (sentada no banquinho)
+      - Formato: JPG otimizado (~150-200KB)
+
+   b) janaina-sobre.jpg
+      - Tamanho: 600x700px (mínimo)
+      - Descrição: Foto para seção Sobre
+      - Recomendação: Use a segunda foto anexada (em pé)
+      - Formato: JPG otimizado (~150-200KB)
+
+2. OTIMIZAÇÃO DE IMAGENS:
+
+   Use qualquer uma dessas ferramentas grátis:
+   - TinyJPG (https://tinyjpg.com/) - Compressão automática
+   - ImageMagick - Linha de comando
+   - FFmpeg - Para conversão para WebP
+
+   Comando ImageMagick:
+   convert janaina-hero.jpg -quality 85 -resize 600x800 janaina-hero-optimized.jpg
+
+   Comando FFmpeg para WebP:
+   ffmpeg -i janaina-hero.jpg -q:v 80 janaina-hero.webp
+
+3. TAMANHO IDEAL:
+
+   - Largura: 600px (desktop: 1200px com @2x)
+   - Altura: 800px (Hero), 700px (Sobre)
+   - Formato recomendado: WebP (melhor compressão)
+   - Fallback: JPG (compatibilidade máxima)
+   - Tamanho arquivo: 100-200KB máximo
+
+4. PÓS-PROCESSAMENTO:
+
+   As imagens já têm:
+   ✓ Background degradado cinzento integrado
+   ✓ Sombra drop shadow
+   ✓ Overlay de gradiente sutil
+   ✓ Cantos arredondados
+
+5. ATUALIZAR O HTML (se necessário):
+
+   <img src="./assets/images/janaina-hero.jpg" 
+        alt="Janaina Santana - Personal Trainer" 
+        class="w-full h-full object-cover object-top">
+
+   Atributos importantes:
+   - object-cover: Mantém proporção sem esticar
+   - object-top: Foca na cabeça (para fotos de corpo inteiro)
+   - object-center: Para fotos de corpo inteiro ou rosto
+
+6. VERSÃO MOBILE:
+
+   Adicionar ao CSS se quiser imagem mobile customizada:
+   
+   @media (max-width: 768px) {
+     .hero-image { display: block; }
+   }
+
+7. BACKUP:
+
+   Mantenha as imagens originais em pasta separada:
+   assets/images/originals/
+
+   Estrutura:
+   assets/images/
+   ├── janaina-hero.jpg
+   ├── janaina-sobre.jpg
+   └── originals/
+       ├── janaina-hero-original.jpg
+       └── janaina-sobre-original.jpg
+
+---
+
+Assim que adicionar as imagens, a landing page estará 100% visual completa!

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Janaina Santana - Consultoria Fitness Online. Treinos personalizados, acompanhamento profissional e pilates. Transforme seu corpo e sua vida.">
+    <meta name="keywords" content="personal trainer online, consultoria fitness online, treino personalizado, pilates online, acompanhamento musculação, educadora física">
+    <meta name="author" content="Janaina Santana">
+    <meta property="og:title" content="Janaina Santana | Consultoria Fitness Online">
+    <meta property="og:description" content="Treinos personalizados com acompanhamento profissional onde você estiver">
+    <meta property="og:type" content="website">
+    
+    <title>Janaina Santana | Consultoria Fitness Online - Treinos Personalizados</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='bold' fill='%237c3aed'>J</text></svg>">
+</head>
+<body class="font-sans text-gray-900">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="text-2xl font-bold gradient-text">JS</div>
+                <span class="font-bold text-gray-900 hidden sm:inline">Janaina Santana</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#sobre" class="text-gray-600 hover:text-primary-700 transition">Sobre</a>
+                <a href="#servicos" class="text-gray-600 hover:text-primary-700 transition">Serviços</a>
+                <a href="#beneficios" class="text-gray-600 hover:text-primary-700 transition">Benefícios</a>
+                <a href="#depoimentos" class="text-gray-600 hover:text-primary-700 transition">Depoimentos</a>
+                <a href="#planos" class="text-gray-600 hover:text-primary-700 transition">Planos</a>
+                <a href="#faq" class="text-gray-600 hover:text-primary-700 transition">FAQ</a>
+            </div>
+            <a href="https://wa.me/5511999999999?text=Olá%20Janaina,%20gostaria%20de%20conhecer%20seus%20serviços" target="_blank" class="btn-whatsapp">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.743 5.4 2.155 7.696L2.5 22.5l8.232-2.158a9.84 9.84 0 004.617 1.175h.005c5.43 0 9.855-4.428 9.855-9.867 0-2.634-.71-5.108-2.055-7.25a9.823 9.823 0 00-7.749-3.497M12 20.447c-1.442 0-2.854-.376-4.077-1.089l-.292-.162-3.03.794.805-2.935-.19-.303a8.203 8.203 0 11.53-13.947l.309.188 3.156-.827-.836 3.021.154.324a8.187 8.187 0 012.28 5.769z"/></svg>
+                WhatsApp
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Hero Content -->
+            <div class="space-y-6 animate-fade-in">
+                <div class="inline-block px-4 py-2 bg-primary-100 rounded-full">
+                    <span class="text-primary-700 font-semibold text-sm">Transforme sua vida com profissionalismo</span>
+                </div>
+                <h1 class="leading-tight">
+                    Treinos Personalizados com 
+                    <span class="gradient-text">Acompanhamento Profissional</span>
+                </h1>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Onde você estiver, quando você quiser. Consultoria fitness online, treinos personalizados e pilates com educadora física especializada.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <button onclick="document.getElementById('formulario-secao').scrollIntoView({behavior: 'smooth'})" class="btn-primary">
+                        Quero Começar Agora
+                    </button>
+                    <a href="https://wa.me/5511999999999?text=Olá%20Janaina,%20gostaria%20de%20conhecer%20seus%20serviços" target="_blank" class="btn-whatsapp justify-center">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.743 5.4 2.155 7.696L2.5 22.5l8.232-2.158a9.84 9.84 0 004.617 1.175h.005c5.43 0 9.855-4.428 9.855-9.867 0-2.634-.71-5.108-2.055-7.25a9.823 9.823 0 00-7.749-3.497M12 20.447c-1.442 0-2.854-.376-4.077-1.089l-.292-.162-3.03.794.805-2.935-.19-.303a8.203 8.203 0 11.53-13.947l.309.188 3.156-.827-.836 3.021.154.324a8.187 8.187 0 012.28 5.769z"/></svg>
+                        Falar com Janaina
+                    </a>
+                </div>
+                <div class="flex gap-8 pt-8 text-sm">
+                    <div>
+                        <p class="text-2xl font-bold gradient-text">500+</p>
+                        <p class="text-gray-600">Alunos Atendidos</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold gradient-text">8+</p>
+                        <p class="text-gray-600">Anos de Experiência</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="relative hidden md:block h-full min-h-96">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl blur-3xl opacity-20"></div>
+                <div class="relative rounded-2xl h-full overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary-100 via-white to-accent-50"></div>
+                    <img src="./assets/images/janaina-hero.png" alt="Janaina Santana - Personal Trainer" class="w-full h-full object-cover object-top relative z-10 brightness-105 contrast-95 saturate-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-50 via-transparent to-transparent opacity-50"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Janaina -->
+    <section id="sobre" class="section-container bg-white">
+        <div class="section-content grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative hidden md:block h-full min-h-96">
+                <div class="absolute -inset-4 bg-gradient-to-r from-primary-200 to-secondary-200 rounded-2xl blur-2xl opacity-30"></div>
+                <div class="relative rounded-xl h-96 overflow-hidden shadow-xl">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary-100 via-white to-accent-50"></div>
+                    <img src="./assets/images/janaina-sobre.jpg" alt="Janaina Santana - Educadora Física" class="w-full h-full object-cover object-center relative z-10 brightness-105 contrast-95 saturate-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-50 via-transparent to-transparent opacity-50"></div>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h2>Sobre a Profissional</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Janaina Santana é educadora física especializada em consultoria fitness online, com mais de 8 anos de experiência no segmento. Formada pela Universidade Estadual e com certificações internacionais em personal training e pilates.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <div class="text-primary-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Formação Academica</h3>
+                            <p class="text-gray-600">Graduada em Educação Física pela Universidade Estadual</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-primary-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Especializações</h3>
+                            <p class="text-gray-600">Personal Trainer, Pilates e Consultoria Online Certificada</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-primary-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">Diferencial</h3>
+                            <p class="text-gray-600">Atendimento humanizado, resultados comprovados e acompanhamento contínuo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Oferecidos -->
+    <section id="servicos" class="section-container bg-accent-50">
+        <div class="section-content">
+            <div class="text-center mb-16 space-y-4">
+                <h2>Serviços Oferecidos</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Conheça as soluções personalizadas que Janaina Santana oferece para transformar seu corpo e melhorar sua saúde
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Consultoria Online -->
+                <div class="card group hover:border-primary-300">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="text-primary-700 mb-3">Consultoria Online</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Avaliação inicial completa, prescrição de treinos personalizados, ajustes periódicos e suporte direto via WhatsApp.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Avaliação postural online</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Planos adaptados ao seu nível</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Atualizações mensais</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Treinos Personalizados -->
+                <div class="card group hover:border-primary-300">
+                    <div class="text-4xl mb-4">🏋️</div>
+                    <h3 class="text-primary-700 mb-3">Treinos Personalizados</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Planos individuais alinhados aos seus objetivos, com evolução monitorada e adequação ao seu nível e capacidade física.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Treino focado no seu objetivo</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Monitoramento contínuo</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Progressão garantida</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pilates -->
+                <div class="card group hover:border-primary-300">
+                    <div class="text-4xl mb-4">🧘</div>
+                    <h3 class="text-primary-700 mb-3">Turma de Pilates</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Aulas de pilates online e presenciais com orientação especializada, ideal para flexibilidade, força e bem-estar.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Aulas ao vivo ou gravadas</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Pequenos grupos ou individual</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Resultados comprovados</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Musculação -->
+                <div class="card group hover:border-primary-300">
+                    <div class="text-4xl mb-4">💪</div>
+                    <h3 class="text-primary-700 mb-3">Acompanhamento para Musculação</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Planejamento de treino, correção de execução, progressão de carga e desempenho com suporte técnico especializado.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Análise de execução por vídeo</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Progressão de carga calculada</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700">✓</span>
+                            <span>Evita lesões e otimiza ganhos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="section-container bg-white">
+        <div class="section-content">
+            <div class="text-center mb-16 space-y-4">
+                <h2>Por Que Treinar com Acompanhamento Profissional?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Descubra como um profissional especializado pode transformar seus resultados
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center space-y-3">
+                    <div class="inline-block p-4 bg-primary-100 rounded-full">
+                        <svg class="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3>Mais Segurança</h3>
+                    <p class="text-gray-600">Executar exercícios com postura correta previne lesões</p>
+                </div>
+
+                <div class="text-center space-y-3">
+                    <div class="inline-block p-4 bg-secondary-100 rounded-full">
+                        <svg class="w-8 h-8 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3>Resultados Mais Rápidos</h3>
+                    <p class="text-gray-600">Treinos otimizados e personalizados aceleram sua transformação</p>
+                </div>
+
+                <div class="text-center space-y-3">
+                    <div class="inline-block p-4 bg-green-100 rounded-full">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3>Menor Risco de Lesões</h3>
+                    <p class="text-gray-600">Profissional acompanha e corrige movimentos inadequados</p>
+                </div>
+
+                <div class="text-center space-y-3">
+                    <div class="inline-block p-4 bg-purple-100 rounded-full">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3>Motivação Contínua</h3>
+                    <p class="text-gray-600">Suporte emocional e reconhecimento de progressos</p>
+                </div>
+
+                <div class="text-center space-y-3">
+                    <div class="inline-block p-4 bg-yellow-100 rounded-full">
+                        <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                    </div>
+                    <h3>Treino Adaptado</h3>
+                    <p class="text-gray-600">Flexibilidade para se adequar à sua rotina e limitações</p>
+                </div>
+
+                <div class="text-center space-y-3">
+                    <div class="inline-block p-4 bg-indigo-100 rounded-full">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <h3>Qualidade Garantida</h3>
+                    <p class="text-gray-600">Metodologia comprovada e resultados reais com certificação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="section-container bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="section-content">
+            <div class="text-center mb-16 space-y-4">
+                <h2>O Que Nossos Alunos Dizem</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Histórias reais de transformação e sucesso
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card">
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "A Janaina mudou minha relação com exercícios físicos. Consegui perder 12kg em 3 meses com treinos personalizados e acompanhamento que realmente faz diferença!"
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold text-gray-900">Maria Silva</p>
+                        <p class="text-sm text-gray-600">Consultoria Online</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Pilates com Janaina superou minhas expectativas. Além de ganhar flexibilidade, meu corpo ficou mais tonificado e a dor nas costas sumiu!"
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold text-gray-900">Carlos Mendes</p>
+                        <p class="text-sm text-gray-600">Turma de Pilates</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Ganhar massa muscular sem sair de casa foi possível! Janaina corrige meu treino por vídeo e vejo a diferença a cada semana."
+                    </p>
+                    <div class="border-t pt-4">
+                        <p class="font-semibold text-gray-900">Felipe Costa</p>
+                        <p class="text-sm text-gray-600">Acompanhamento Musculação</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <section id="planos" class="section-container bg-white">
+        <div class="section-content">
+            <div class="text-center mb-16 space-y-4">
+                <h2>Planos de Atendimento</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Escolha o plano que melhor se adequa aos seus objetivos e seu orçamento
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Plano Básico -->
+                <div class="card border-2 border-gray-200">
+                    <div class="mb-6">
+                        <h3 class="text-primary-700 mb-2">Plano Mensal</h3>
+                        <p class="text-3xl font-bold text-gray-900">R$ 197<span class="text-lg text-gray-600">/mês</span></p>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>1 avaliação inicial</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>Programa personalizado</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>1 ajuste mensal</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-gray-400 flex-shrink-0">✗</span>
+                            <span class="text-gray-400">Suporte via chat</span>
+                        </li>
+                    </ul>
+                    <button onclick="document.getElementById('formulario-secao').scrollIntoView({behavior: 'smooth'})" class="w-full btn-secondary">
+                        Escolher Plano
+                    </button>
+                </div>
+
+                <!-- Plano Popular -->
+                <div class="card border-4 border-primary-700 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary-700 to-secondary-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                        Mais Popular
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-primary-700 mb-2">Plano Trimestral</h3>
+                        <p class="text-3xl font-bold text-gray-900">R$ 499<span class="text-lg text-gray-600">/3 meses</span></p>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>Tudo do plano mensal</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>3 ajustes mensais</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>Suporte via WhatsApp</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>Desconto 15%</span>
+                        </li>
+                    </ul>
+                    <button onclick="document.getElementById('formulario-secao').scrollIntoView({behavior: 'smooth'})" class="w-full btn-primary">
+                        Escolher Plano
+                    </button>
+                </div>
+
+                <!-- Plano Premium -->
+                <div class="card border-2 border-gray-200">
+                    <div class="mb-6">
+                        <h3 class="text-primary-700 mb-2">Plano Anual</h3>
+                        <p class="text-3xl font-bold text-gray-900">R$ 1.497<span class="text-lg text-gray-600">/ano</span></p>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>Acompanhamento total</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>Ajustes semanais</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>Suporte prioritário</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-primary-700 flex-shrink-0">✓</span>
+                            <span>Desconto 30%</span>
+                        </li>
+                    </ul>
+                    <button onclick="document.getElementById('formulario-secao').scrollIntoView({behavior: 'smooth'})" class="w-full btn-secondary">
+                        Escolher Plano
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="formulario-secao" class="section-container bg-gradient-to-br from-primary-900 to-primary-700 text-white">
+        <div class="section-content max-w-2xl">
+            <div class="text-center mb-12 space-y-4">
+                <h2 class="text-white">Pronto Para Começar Sua Transformação?</h2>
+                <p class="text-primary-100">
+                    Preencha o formulário abaixo para receber uma proposta personalizada
+                </p>
+            </div>
+
+            <form id="contactForm" class="space-y-6" onsubmit="handleSubmit(event)">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="nome" class="block text-sm font-semibold mb-2">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" required class="w-full px-4 py-3 rounded-lg bg-primary-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary-500 placeholder-gray-500" placeholder="Seu nome">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-semibold mb-2">E-mail *</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-primary-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary-500 placeholder-gray-500" placeholder="seu@email.com">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="whatsapp" class="block text-sm font-semibold mb-2">WhatsApp *</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required class="w-full px-4 py-3 rounded-lg bg-primary-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary-500 placeholder-gray-500" placeholder="(11) 99999-9999">
+                    </div>
+                    <div>
+                        <label for="objetivo" class="block text-sm font-semibold mb-2">Seu Objetivo *</label>
+                        <select id="objetivo" name="objetivo" required class="w-full px-4 py-3 rounded-lg bg-primary-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary-500">
+                            <option value="">Selecione um objetivo</option>
+                            <option value="emagrecimento">Emagrecimento Saudável</option>
+                            <option value="ganho-massa">Ganho de Massa Muscular</option>
+                            <option value="condicionamento">Melhorar Condicionamento</option>
+                            <option value="iniciante">Iniciar com Profissional</option>
+                            <option value="pilates">Pilates</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="mensagem" class="block text-sm font-semibold mb-2">Mensagem (Opcional)</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" class="w-full px-4 py-3 rounded-lg bg-primary-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-secondary-500 placeholder-gray-500 resize-none" placeholder="Conte-nos sobre você e seus objetivos..."></textarea>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <input type="checkbox" id="privacidade" name="privacidade" required class="mt-1">
+                    <label for="privacidade" class="text-sm text-primary-50">
+                        Concordo com a <a href="#" class="underline hover:text-secondary-400">política de privacidade</a> e autorizo o contato via WhatsApp e e-mail para receber informações sobre os serviços. *
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full btn-primary">
+                    Quero Começar Agora
+                </button>
+
+                <p class="text-center text-sm text-primary-100">
+                    Também pode chamar direto no 
+                    <a href="https://wa.me/5511999999999" target="_blank" class="text-secondary-400 hover:text-secondary-300 font-semibold">WhatsApp</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-container bg-accent-50">
+        <div class="section-content">
+            <div class="text-center mb-16 space-y-4">
+                <h2>Perguntas Frequentes</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Tire suas dúvidas sobre os serviços e como funciona o acompanhamento
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="group card cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-primary-700 hover:text-primary-800">
+                        Preciso ter experiência para começar?
+                        <span class="group-open:rotate-180 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 pt-4 border-t">
+                        Não! Os treinos são totalmente personalizados para o seu nível, independentemente de ser iniciante ou avançado. Janaina adapt os exercícios conforme sua evolução.
+                    </p>
+                </details>
+
+                <details class="group card cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-primary-700 hover:text-primary-800">
+                        Os treinos são adaptados para iniciantes?
+                        <span class="group-open:rotate-180 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 pt-4 border-t">
+                        Absolutamente! O programa começa com exercícios fundamentais e progressiva conforme você ganha força e confiança. Segurança e efetividade em primeiro lugar.
+                    </p>
+                </details>
+
+                <details class="group card cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-primary-700 hover:text-primary-800">
+                        Como funciona o acompanhamento online?
+                        <span class="group-open:rotate-180 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 pt-4 border-t">
+                        Você recebe um programa personalizado, pode enviar vídeos dos seus treinos para análise e correção, além de suporte via WhatsApp para dúvidas e ajustes conforme necessário.
+                    </p>
+                </details>
+
+                <details class="group card cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-primary-700 hover:text-primary-800">
+                        Quantas vezes por semana devo treinar?
+                        <span class="group-open:rotate-180 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 pt-4 border-t">
+                        Recomenda-se mínimo 3 vezes por semana para resultados significativos. Mas isso é personalizado de acordo com seu objetivo, disponibilidade e nível atual de condicionamento.
+                    </p>
+                </details>
+
+                <details class="group card cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-primary-700 hover:text-primary-800">
+                        Preciso de equipamentos?
+                        <span class="group-open:rotate-180 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 pt-4 border-t">
+                        Os treinos são adaptáveis! Podem incluir exercícios apenas com o peso do corpo, com halteres, máquinas ou até objetos do dia a dia. Janaina trabalha com o que você tem disponível.
+                    </p>
+                </details>
+
+                <details class="group card cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-primary-700 hover:text-primary-800">
+                        Quanto tempo leva para ver resultados?
+                        <span class="group-open:rotate-180 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 pt-4 border-t">
+                        Muitos alunos sentem diferença em 2-3 semanas (disposição e força). Resultados visuais significativos geralmente aparecem entre 6-8 semanas com consistência e acompanhamento profissional.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section-container bg-gradient-to-r from-primary-700 via-primary-600 to-secondary-600 text-white">
+        <div class="section-content text-center space-y-8">
+            <h2 class="text-white text-4xl md:text-5xl">
+                Não Perca Mais Tempo com Sua Saúde
+            </h2>
+            <p class="text-lg text-primary-100 max-w-2xl mx-auto">
+                Comece hoje sua transformação. Janaina Santana está pronta para te guiar rumo aos seus objetivos com profissionalismo e dedicação.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="document.getElementById('formulario-secao').scrollIntoView({behavior: 'smooth'})" class="px-8 py-4 bg-white text-primary-700 font-semibold rounded-lg hover:bg-primary-50 transition text-lg">
+                    Começar Agora
+                </button>
+                <a href="https://wa.me/5511999999999?text=Olá%20Janaina,%20gostaria%20de%20conhecer%20seus%20serviços" target="_blank" class="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary-700 transition text-lg flex items-center justify-center gap-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.743 5.4 2.155 7.696L2.5 22.5l8.232-2.158a9.84 9.84 0 004.617 1.175h.005c5.43 0 9.855-4.428 9.855-9.867 0-2.634-.71-5.108-2.055-7.25a9.823 9.823 0 00-7.749-3.497M12 20.447c-1.442 0-2.854-.376-4.077-1.089l-.292-.162-3.03.794.805-2.935-.19-.303a8.203 8.203 0 11.53-13.947l.309.188 3.156-.827-.836 3.021.154.324a8.187 8.187 0 012.28 5.769z"/></svg>
+                    Falar com Janaina
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold mb-4">Sobre</h3>
+                    <p class="text-sm text-gray-400">
+                        Janaina Santana - Consultoria Fitness Online com profissionalismo e dedicação.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Serviços</h3>
+                    <ul class="text-sm space-y-2 text-gray-400">
+                        <li><a href="#servicos" class="hover:text-white transition">Consultoria Online</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition">Treinos Personalizados</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition">Pilates</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition">Musculação</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Contato</h3>
+                    <ul class="text-sm space-y-2 text-gray-400">
+                        <li>
+                            <a href="https://wa.me/5511999999999" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.743 5.4 2.155 7.696L2.5 22.5l8.232-2.158a9.84 9.84 0 004.617 1.175h.005c5.43 0 9.855-4.428 9.855-9.867 0-2.634-.71-5.108-2.055-7.25a9.823 9.823 0 00-7.749-3.497M12 20.447c-1.442 0-2.854-.376-4.077-1.089l-.292-.162-3.03.794.805-2.935-.19-.303a8.203 8.203 0 11.53-13.947l.309.188 3.156-.827-.836 3.021.154.324a8.187 8.187 0 012.28 5.769z"/></svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/></svg>
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Legal</h3>
+                    <ul class="text-sm space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Política de Privacidade</a></li>
+                        <li><a href="#" class="hover:text-white transition">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-white transition">LGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2026 Janaina Santana. Todos os direitos reservados.</p>
+                <p>Desenvolvido com <span class="text-red-500">❤</span> para sua transformação</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Fixed WhatsApp Button -->
+    <a href="https://wa.me/5511999999999?text=Olá%20Janaina,%20gostaria%20de%20conhecer%20seus%20serviços" target="_blank" class="fixed bottom-6 right-6 md:hidden bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-110">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.734.743 5.4 2.155 7.696L2.5 22.5l8.232-2.158a9.84 9.84 0 004.617 1.175h.005c5.43 0 9.855-4.428 9.855-9.867 0-2.634-.71-5.108-2.055-7.25a9.823 9.823 0 00-7.749-3.497M12 20.447c-1.442 0-2.854-.376-4.077-1.089l-.292-.162-3.03.794.805-2.935-.19-.303a8.203 8.203 0 11.53-13.947l.309.188 3.156-.827-.836 3.021.154.324a8.187 8.187 0 012.28 5.769z"/></svg>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Formulário Submit
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const objetivo = document.getElementById('objetivo').value;
+            const mensagem = document.getElementById('mensagem').value;
+            
+            // Mensagem formatada para WhatsApp
+            const mensagemWhatsApp = `Olá Janaina! Meu nome é ${nome}. Estou interessado em seus serviços, especialmente em: ${objetivo}. Meu e-mail é ${email}. ${mensagem ? 'Mensagem: ' + mensagem : ''}`;
+            
+            // Redirecionar para WhatsApp
+            const urlWhatsApp = `https://wa.me/5511999999999?text=${encodeURIComponent(mensagemWhatsApp)}`;
+            window.open(urlWhatsApp, '_blank');
+            
+            // Resetar formulário
+            document.getElementById('contactForm').reset();
+        }
+
+        // Efeito de scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animação ao carregar
+        window.addEventListener('load', function() {
+            const elements = document.querySelectorAll('.animate-fade-in, .card');
+            elements.forEach((el, index) => {
+                el.style.animation = `fadeIn 0.6s ease-in ${index * 0.1}s both`;
+            });
+        });
+    </script>
+</body>
+</html>

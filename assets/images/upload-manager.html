@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Imagens - Landing Page Janaina Santana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .image-section {
+            margin-bottom: 40px;
+        }
+
+        .image-section h2 {
+            color: #667eea;
+            font-size: 18px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .image-info {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: #555;
+            border-left: 4px solid #667eea;
+        }
+
+        .image-info strong {
+            color: #333;
+        }
+
+        .upload-box {
+            border: 2px dashed #667eea;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f9f9f9;
+        }
+
+        .upload-box:hover {
+            background: #f0f4ff;
+            border-color: #764ba2;
+        }
+
+        .upload-box.active {
+            background: #e8f0ff;
+            border-color: #667eea;
+        }
+
+        .upload-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .upload-text {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .upload-subtext {
+            color: #999;
+            font-size: 13px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .preview {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .preview.show {
+            display: block;
+        }
+
+        .preview img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 40px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            border-left: 4px solid #28a745;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            border-left: 4px solid #f5c6cb;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .instruction {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #856404;
+        }
+
+        .instruction strong {
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .upload-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Gerenciador de Imagens</h1>
+        <p class="subtitle">Carregue as fotos da Janaina para a landing page</p>
+
+        <div id="successMessage" class="success-message"></div>
+        <div id="errorMessage" class="error-message"></div>
+
+        <!-- Hero Image Section -->
+        <div class="image-section">
+            <h2>🎬 Imagem Hero (Foto de Corpo Inteiro)</h2>
+            <div class="image-info">
+                <strong>Dimensões recomendadas:</strong> 600x800px<br>
+                <strong>Formato:</strong> JPG ou PNG<br>
+                <strong>Tamanho máximo:</strong> 5MB<br>
+                <strong>Descrição:</strong> Foto profissional para a primeira seção (hero)
+            </div>
+            <div class="upload-box" onclick="document.getElementById('heroInput').click()">
+                <div class="upload-icon">📤</div>
+                <div class="upload-text">Clique ou arraste a imagem</div>
+                <div class="upload-subtext">janaina-hero.jpg (600x800px)</div>
+            </div>
+            <input type="file" id="heroInput" accept="image/*" onchange="handleHeroUpload(event)">
+            <div id="heroPreview" class="preview">
+                <img id="heroImage" src="" alt="Hero Image Preview">
+            </div>
+        </div>
+
+        <!-- About Image Section -->
+        <div class="image-section">
+            <h2>👤 Imagem Sobre (Foto Profissional)</h2>
+            <div class="image-info">
+                <strong>Dimensões recomendadas:</strong> 600x700px<br>
+                <strong>Formato:</strong> JPG ou PNG<br>
+                <strong>Tamanho máximo:</strong> 5MB<br>
+                <strong>Descrição:</strong> Foto para a seção "Sobre a Profissional"
+            </div>
+            <div class="upload-box" onclick="document.getElementById('aboutInput').click()">
+                <div class="upload-icon">📤</div>
+                <div class="upload-text">Clique ou arraste a imagem</div>
+                <div class="upload-subtext">janaina-sobre.jpg (600x700px)</div>
+            </div>
+            <input type="file" id="aboutInput" accept="image/*" onchange="handleAboutUpload(event)">
+            <div id="aboutPreview" class="preview">
+                <img id="aboutImage" src="" alt="About Image Preview">
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-secondary" onclick="resetForm()">🔄 Limpar</button>
+            <button class="btn-primary" onclick="downloadInstructions()">📥 Ver Instruções</button>
+            <button class="btn-primary" onclick="generateGuide()">✅ Gerar Guia</button>
+        </div>
+
+        <div class="instruction">
+            <strong>💡 Dica:</strong> Após fazer upload das imagens, copie-as para a pasta <code>assets/images/</code> do projeto da landing page.
+        </div>
+    </div>
+
+    <script>
+        function showMessage(message, type) {
+            const messageEl = type === 'success' 
+                ? document.getElementById('successMessage')
+                : document.getElementById('errorMessage');
+            
+            messageEl.textContent = message;
+            messageEl.classList.add('show');
+            
+            setTimeout(() => {
+                messageEl.classList.remove('show');
+            }, 5000);
+        }
+
+        function handleHeroUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                validateAndPreview(file, 'hero');
+            }
+        }
+
+        function handleAboutUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                validateAndPreview(file, 'about');
+            }
+        }
+
+        function validateAndPreview(file, type) {
+            // Validar tamanho
+            if (file.size > 5 * 1024 * 1024) {
+                showMessage('❌ Arquivo muito grande! Máximo 5MB.', 'error');
+                return;
+            }
+
+            // Validar tipo
+            if (!file.type.startsWith('image/')) {
+                showMessage('❌ Por favor, envie uma imagem válida.', 'error');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    // Mostrar preview
+                    const previewEl = document.getElementById(`${type}Preview`);
+                    const imgEl = document.getElementById(`${type}Image`);
+                    imgEl.src = e.target.result;
+                    previewEl.classList.add('show');
+
+                    // Validar dimensões
+                    const width = img.width;
+                    const height = img.height;
+                    const expectedRatio = type === 'hero' ? 0.75 : 0.857; // 600x800 ou 600x700
+                    const actualRatio = width / height;
+
+                    if (Math.abs(actualRatio - expectedRatio) > 0.1) {
+                        showMessage(`⚠️ Dimensões diferentes do recomendado (${width}x${height})`, 'error');
+                    } else {
+                        showMessage(`✅ Imagem "${type === 'hero' ? 'Hero' : 'Sobre'}" carregada com sucesso!`, 'success');
+                    }
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function resetForm() {
+            document.getElementById('heroInput').value = '';
+            document.getElementById('aboutInput').value = '';
+            document.getElementById('heroPreview').classList.remove('show');
+            document.getElementById('aboutPreview').classList.remove('show');
+            showMessage('✅ Formulário limpo!', 'success');
+        }
+
+        function generateGuide() {
+            const guide = `
+===========================================
+GUIA DE INTEGRAÇÃO DE IMAGENS
+===========================================
+
+1. DIMENSÕES RECOMENDADAS:
+   - Hero: 600x800px
+   - Sobre: 600x700px
+
+2. ARQUIVOS A SALVAR:
+   - assets/images/janaina-hero.jpg
+   - assets/images/janaina-sobre.jpg
+
+3. OTIMIZAÇÃO:
+   Use ferramentas como TinyJPG para comprimir
+
+4. APÓS SALVAR:
+   As imagens aparecerão automaticamente na landing page
+
+5. CARACTERÍSTICAS DAS IMAGENS:
+   ✓ Background degradado cinzento
+   ✓ Sombra elegante
+   ✓ Overlay de gradiente sutil
+   ✓ Cantos arredondados
+   ✓ Responsivo em mobile
+
+Bom trabalho! 🚀
+            `;
+            alert(guide);
+        }
+
+        function downloadInstructions() {
+            window.open('../assets/images/placeholder.txt', '_blank');
+        }
+
+        // Drag and drop
+        document.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            document.querySelectorAll('.upload-box').forEach(box => {
+                box.classList.add('active');
+            });
+        });
+
+        document.addEventListener('dragleave', () => {
+            document.querySelectorAll('.upload-box').forEach(box => {
+                box.classList.remove('active');
+            });
+        });
+
+        document.addEventListener('drop', (e) => {
+            e.preventDefault();
+            document.querySelectorAll('.upload-box').forEach(box => {
+                box.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

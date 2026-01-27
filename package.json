@@ -1,0 +1,20 @@
+{
+  "name": "janaina-santana-landing",
+  "version": "1.0.0",
+  "description": "Landing page para Janaina Santana - Consultoria Fitness Online",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/output.css --minify"
+  },
+  "keywords": [
+    "fitness",
+    "personal-trainer",
+    "consultoria",
+    "pilates"
+  ],
+  "author": "Agência Digital",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
